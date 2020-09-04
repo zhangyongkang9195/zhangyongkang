@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lening.mapper.ShangMapper">
+
+    <select id="getAll" resultMap="Shang">
+       select * from shang s LEFT JOIN type t on s.tid=t.tid
+</select>
+
+</mapper>
